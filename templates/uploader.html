@@ -1,0 +1,56 @@
+<html>
+<style>
+div.body1{
+    position:absolute;
+    left: 300px;
+    top :20px;
+    position :center;
+}
+.inputfile {
+    left:15px;
+    top:15px;
+    font-size: 16px;
+	position: relative;
+}
+.inputfile1 {
+	top:15px;
+    left:100px;
+    font-size: 16px;
+	position: relative;
+}
+div.resumedisplay{
+    position:relative;
+    left:10px;
+    width:350px;
+    top :42px;
+    border-style: solid;
+    border-width: 1px;
+    padding-left:5px;
+}
+div.resultdisplay{
+	width: 350px;
+	height: 500px;
+    top:210px;
+    left:370px;
+    float :right;
+	border-style: solid;
+    border-width: 1px;
+    position:absolute;
+}
+</style>
+   <body>
+   	  <div class="body1"> 
+        <img src={{url_for('static',filename="JOBPORTALIMAGE.png")}} alt="JOB PORTAL">
+         <input type = "file" name = "file"  class ="inputfile"/>
+         <input type = "submit" class ="inputfile1"/>
+      	<div class='resumedisplay'>
+            <p>{{ result }}</p>
+       </div>
+
+      	<div class='resultdisplay'>
+         <p>{{ new }}</p>
+        </div>
+
+      </div>
+   </body>
+</html>

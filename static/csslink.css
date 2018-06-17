@@ -1,0 +1,40 @@
+div.body1{
+    position:absolute;
+    left: 300px;
+    top :20px;
+    position :center;
+}
+
+.inputfile {
+    left:15px;
+    top:15px;
+    font-size: 16px;
+	position: relative;
+}
+
+
+.inputfile1 {
+	top:15px;
+    left:100px;
+    font-size: 16px;
+	position: relative;
+}
+
+div.resumedisplay{
+    position:relative;
+    left:10px;
+    height :400px;
+    width:350px;
+    top :20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+div.resultdisplay{
+	height:400px;
+	width: 350px;
+    top:0px;
+	border-style: solid;
+    border-width: 1px;
+    position:relative;
+}
