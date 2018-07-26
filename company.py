@@ -16,7 +16,6 @@ def algocomp(cgpa,pref1,pref2,pref3,skill12,equal12):
     a=a.values.tolist()
     print(a)
 
-
     def simple(mat):
         print("simple wala called")
         weight = [4, 3, 2, 1]
@@ -117,11 +116,11 @@ def algocomp(cgpa,pref1,pref2,pref3,skill12,equal12):
 
 @app.route('/put')
 def student():
-   return render_template('comp2.html')
+   return render_template('companyinput.html')
 
 
 @app.route('/comp21', methods=['GET', 'POST'])
-def upload_file1():
+def uploadcompdata():
     if request.method == 'POST':
         cgpa = request.form['cgpa']
         pref1 = request.form['pref1']
